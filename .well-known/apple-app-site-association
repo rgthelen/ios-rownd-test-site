@@ -5,11 +5,11 @@
        "applinks": {
            "apps": [],
            "details": [{
-               "appID": "34CNMPW6U9.io.rownd.RowndAuthTest.Clip",
-               "paths": ["/app-clip/*"],
+               "appID": "34CNMPW6U9.io.rownd.RowndAuthTest",
+               "paths": ["/*"],
                "components": [{
-                   "/": "/app-clip/*",
-                   "comment": "Matches any URL with a path that starts with /app-clip/"
+                   "/": "/*",
+                   "comment": "Matches any URL with a path that starts with "
                }]
            }]
        }
