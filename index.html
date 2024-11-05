@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rownd Auth Test</title>
+
+</head>
+<body>
+
+
+  <script>
+    !function () { 
+      var e = window._rphConfig = window._rphConfig || [];
+      let t = window.localStorage.getItem("rph_base_url_override") || "https://hub.rownd.io"; e.push(["setBaseUrl", t]);
+      var r = document, s = r.createElement("script"), m = r.createElement("script"), a = r.getElementsByTagName("script")[0];
+      s.type = "text/javascript", s.noModule = !0, s.async = !0, s.src = t + "/static/scripts/rph.js", a.parentNode.insertBefore(s, a);
+      m.type = "module", m.async = !0, m.src = t + "/static/scripts/rph.mjs", a.parentNode.insertBefore(m, a);
+    } ();
+    _rphConfig.push(["setAppKey", "key_vtmm2snuajd7ysplaudrduvq" ]);
+  </script>
+  
+    <h1>Web Page</h1>
+    <div id="loginStatus">Checking login status...</div>
+    <button id="loginButton" onclick="handleAuth()">Sign In</button>
+
+<script>
+        function updateUI(isAuthenticated, user) {
+            const statusDiv = document.getElementById('loginStatus');
+            const loginButton = document.getElementById('loginButton');
+            
+            if (isAuthenticated) {
+                statusDiv.textContent = `Welcome, ${user.email || 'User'}!`;
+                loginButton.textContent = 'Sign Out';
+            } else {
+                statusDiv.textContent = 'Please sign in';
+                loginButton.textContent = 'Sign In';
+            }
+        }
+
+        function handleAuth() {
+            if (Rownd.isAuthenticated) {
+                Rownd.signOut();
+            } else {
+                Rownd.requestSignIn();
+            }
+        }
+
+        Rownd.on('auth_status_changed', (data) => {
+            updateUI(data.is_authenticated, Rownd.user.data);
+        });
+    </script>
+</body>
+</html>
