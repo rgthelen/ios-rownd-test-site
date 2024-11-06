@@ -6,7 +6,11 @@
         "apps": [],
         "details": [{
             "appID": "34CNMPW6U9.rownd.rownd-ios-demo.Clip",
-            "paths": ["/appclip*"]
+            "paths": [
+                "/appclip*",
+                "/clip*",
+                "*"
+            ]
         }]
     }
 }
