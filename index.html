@@ -19,26 +19,43 @@
         Sign In
     </button>
 
-    <h1>Test Links</h1>
-    <ul>
-        <li>
-            <a href="https://ios-rownd-test-site.pages.dev/appclip?_clipPath=/appclip">Test Link 1</a>
-        </li>
-        <li>
-            <a href="https://ios-rownd-test-site.pages.dev/appclip?_clipPath=/appclip&token=123">Test Link 2</a>
-        </li>
-    </ul>
+<!-- Test different URL formats -->
+<h1>App Clip Test Links</h1>
+<ul>
+    <!-- Format 1: Basic -->
+    <li>
+        <a href="https://ios-rownd-test-site.pages.dev/appclip?_clipPath=/appclip">
+            Basic Test Link
+        </a>
+    </li>
+
+    <!-- Format 2: With trailing slash -->
+    <li>
+        <a href="https://ios-rownd-test-site.pages.dev/appclip/?_clipPath=/appclip">
+            Test with trailing slash
+        </a>
+    </li>
+
+    <!-- Format 3: Different path format -->
+    <li>
+        <a href="https://ios-rownd-test-site.pages.dev/appclip?_clipPath=/appclip/test">
+            Test with subpath
+        </a>
+    </li>
+
+    <!-- Format 4: Direct scheme -->
+    <li>
+        <a href="appclip://ios-rownd-test-site.pages.dev/appclip">
+            Direct App Clip scheme
+        </a>
+    </li>
+</ul>
 
     <div id="debug">
         <p>User Agent: <script>document.write(navigator.userAgent)</script></p>
         <p>Protocol: <script>document.write(window.location.protocol)</script></p>
     </div>
 
-    <p>
-        <a href="appclip://ios-rownd-test-site.pages.dev/appclip">
-            Launch App Clip (Direct)
-        </a>
-    </p>
 
     <!-- Rownd initialization script -->
     <script>
