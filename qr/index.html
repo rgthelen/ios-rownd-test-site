@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>App Clip QR Test</title>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>App Clip QR Test</h1>
+    
+    <!-- QR Code will be generated here -->
+    <div id="qrcode"></div>
+    
+    <script>
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://ios-rownd-test-site.pages.dev/appclip?_clipPath=/appclip",
+            width: 256,
+            height: 256
+        });
+    </script>
+</body>
+</html>
