@@ -6,7 +6,7 @@
         "apps": [],
         "details": [{
             "appID": "34CNMPW6U9.io.rownd.RowndAuthTest.Clip",
-            "paths": ["/appclip/*"]
+            "paths": ["/appclip*"]
         }]
     }
 }
