@@ -1,16 +1,16 @@
-   {
-       "appclips": {
-           "apps": ["34CNMPW6U9.io.rownd.RowndAuthTest.Clip"]
-       },
-       "applinks": {
-           "apps": [],
-           "details": [{
-               "appID": "34CNMPW6U9.io.rownd.RowndAuthTest",
-               "paths": ["/*"],
-               "components": [{
-                   "/": "/*",
-                   "comment": "Matches any URL with a path that starts with "
-               }]
-           }]
-       }
-   }
+{
+    "appclips": {
+        "apps": ["34CNMPW6U9.io.rownd.RowndAuthTest.Clip"]
+    },
+    "applinks": {
+        "apps": [],
+        "details": [{
+            "appID": "34CNMPW6U9.io.rownd.RowndAuthTest.Clip",
+            "paths": ["/appclip/*"],
+            "components": [{
+                "/": "/appclip/*",
+                "comment": "Matches any URL starting with /appclip/"
+            }]
+        }]
+    }
+}
