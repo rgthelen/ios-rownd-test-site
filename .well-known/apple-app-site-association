@@ -1,11 +1,11 @@
 {
     "appclips": {
-        "apps": ["34CNMPW6U9.io.rownd.RowndAuthTest.Clip"]
+        "apps": ["34CNMPW6U9.rownd.rownd-ios-demo.Clip"]
     },
     "applinks": {
         "apps": [],
         "details": [{
-            "appID": "34CNMPW6U9.io.rownd.RowndAuthTest.Clip",
+            "appID": "34CNMPW6U9.rownd.rownd-ios-demo.Clip",
             "paths": ["/appclip*"]
         }]
     }
